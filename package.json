@@ -1,11 +1,12 @@
 {
   "name": "ruleit",
-  "version": ".1.0",
+  "version": "0.1.1",
   "description": "Javascript rule engine",
   "main": "./lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
-    "test": "npm run lint && npm run cover",
+    "test_old": "npm run lint && npm run cover",
+    "test": "npm run lint",
     "test:prod": "cross-env BABEL_ENV=production npm run test",
     "test:only": "mocha --require babel-core/register --require babel-polyfill --recursive",
     "test:watch": "npm test -- --watch",
@@ -21,7 +22,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flexdinesh/npm-module-boilerplate.git"
+    "url": "git+https://github.com/herneli/ruleit.git"
   },
   "keywords": [
     "boilerplate",
@@ -30,12 +31,9 @@
     "node",
     "javascript"
   ],
-  "author": "Dinesh Pandiyan <flexdinesh@gmail.com>",
+  "author": "Jordi Hernandez <jordi.hernandez@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/flexdinesh/npm-module-boilerplate/issues"
-  },
-  "homepage": "https://github.com/flexdinesh/npm-module-boilerplate#readme",
+  "homepage": "https://github.com/herneli/ruleit#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.1",

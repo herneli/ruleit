@@ -1,10 +1,10 @@
-const defaultAwesomeFunction = name => {
-  const returnStr = `I am the Default Awesome Function, fellow comrade 2! - ${name}`;
+const defaultRuleItFunction = () => {
+  const returnStr = "I am the Default RuleIt Function";
   return returnStr;
 };
 
-const awesomeFunction = () => "I am just an Awesome Function";
+const ruleItFunction = () => "I am just an RuleIt Function";
 
-export default defaultAwesomeFunction;
+export default defaultRuleItFunction;
 
-export { awesomeFunction };
+export { ruleItFunction };
