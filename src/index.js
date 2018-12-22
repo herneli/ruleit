@@ -1,10 +1,3 @@
-const defaultRuleItFunction = () => {
-  const returnStr = "I am the Default RuleIt Function";
-  return returnStr;
-};
+import getValue from "./getValue";
 
-const ruleItFunction = () => "I am just an RuleIt Function";
-
-export default defaultRuleItFunction;
-
-export { ruleItFunction };
+export { getValue };
